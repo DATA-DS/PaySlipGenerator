@@ -13,8 +13,9 @@ public class FormatterUtility {
             value =  df.parse(str).doubleValue();
         }
         catch(Exception e){
+            System.err.println("Invalid value is entered.");
             e.printStackTrace();
-            //System.exit(0);
+            System.exit(1);
         }
         return value;
 
@@ -27,7 +28,7 @@ public class FormatterUtility {
         }
         catch(Exception e){
             e.printStackTrace();
-            //System.exit(0);
+            //System.exit(1);
         }
         return formattedValue;
 

@@ -84,10 +84,17 @@ public class MonthlyPaySlipCalculator {
 
     public void generate(){
         //Output
+        System.out.println("\n\n");
+        System.out.println("*".repeat(60));
+        System.out.print("*".repeat(21));
+        System.out.print(" ".repeat(5) + "Payslip" + " ".repeat(5));
+        System.out.println("*".repeat(21));
+        System.out.println("*".repeat(60));
         System.out.println("Monthly Pay Slip for: " + getUserName());
         System.out.println("Gross Monthly Income: $" + getFormattedGrossMonthlySalary());
         System.out.println("Monthly Income Tax: $" + getFormattedGrossMonthlySalary());
         System.out.println("Net Monthly Income: $" + getFormattedNetMonthlySalary());
+        System.out.println("*".repeat(60));
     }
 
     public ArrayList<TaxRate> getRates() {
