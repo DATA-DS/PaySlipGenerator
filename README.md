@@ -20,7 +20,7 @@ javac com\payslip\MonthlyPaySlipCalculatorTest.java
 
 ### Test run the program
 ```
-java com.payslip.MonthlyPaySlipCalculatorTest
+java -ea com.payslip.MonthlyPaySlipCalculatorTest
 ```
 Should return all test cases are passed.
 
